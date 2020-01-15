@@ -8,7 +8,8 @@ class Home extends React.Component {
     super()
 
     this.state = {
-      animateReady: null
+      animateReady: null,
+      test: ''
     }
   }
 
