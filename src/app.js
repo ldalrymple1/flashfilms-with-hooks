@@ -9,37 +9,27 @@ import Show from './components/Show'
 
 import LightningImage from './assets/Lightning-Bolt.jpg'
 
-class App extends React.Component {
-  constructor() {
-    super()
-  }
+const App = () => (
+  <BrowserRouter>
+    <div className="page-wrapper">
+      <nav className="">
+        <Link to="/">
+          <img src={LightningImage} />
+        </Link>
+        <Link to="/search" className="title-name">FLASH FILMS</Link>
+      </nav>
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/search/:id" component={Index} />
+          <Route path="/search" component={Search}/>
+          <Route path="/movies/:id" component={Show} />
+        </Switch>
+      </main>
+    </div>
+  </BrowserRouter>
 
-  render() {
-    return (
-      <BrowserRouter>
-        <div className="page-wrapper">
-          <nav className="">
-            <Link to="/">
-              <img src={LightningImage} />
-            </Link>
-            <Link to="/search" className="title-name">FLASH FILMS</Link>
-          </nav>
-          <main>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/search/:id" component={Index} />
-              <Route path="/search" component={Search}/>
-              <Route path="/movies/:id" component={Show} />
-            </Switch>
-          </main>
-        </div>
-      </BrowserRouter>
-
-    )
-  }
-  
-
-}
+)
 
 ReactDOM.render(
   <App />,
