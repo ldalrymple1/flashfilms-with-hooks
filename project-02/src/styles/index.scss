@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Biryani', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px;
+  font-family: 'Biryani', sans-serif;
+  max-width: 300px;
+  max-height: 500px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  
+  .poster-wrapper {
+    height: 420px;
+    img {
+      transform: scale(.85);
+      margin: 0;
+    }
+  }
+  .title-wrapper {
+    height: 80px;
+    // background: orange; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .film-title {
+      font-family: 'Biryani', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      border: black;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-weight: 800;
+    
+    }
+  }
+  
+}
+
+.card {
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05)
+
+}
+
+.error-response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 100px;
+    margin: 20px;
+  }
+}
+
+

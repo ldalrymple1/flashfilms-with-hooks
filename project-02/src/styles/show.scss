@@ -1,0 +1,104 @@
+$flashOfColor: rgb(247, 18, 75);
+
+
+@font-face {
+  font-family: 'Biryani', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .show-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 50px;
+  }
+  
+  .movie-image {
+    display: flex;
+    margin-right: 10px;
+    // background: green;
+    width: 40%;
+    justify-content: flex-end;
+    margin-right: 80px;
+
+    img {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    }
+  
+    // flex-grow: 1;
+  }
+  
+  .movie-bio {
+    // flex-grow: 1;
+    // background: blue;
+    width: 60%;
+    font-family: 'Biryani', sans-serif;
+    // font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 150px;
+
+    h1 {
+      font-size: 60px;
+      text-decoration: underline;
+    }
+    strong {
+      text-decoration: underline;
+    }
+    h2 {
+      text-decoration: underline;
+    }
+    h1:hover {
+      color: $flashOfColor;
+      text-shadow: 2px 2px 2px black;
+    }
+
+  }
+}
+
+.similar-movies {
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+.carousel-wrapper {
+  margin-top: 10px;
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 40px;
+  
+    .similar-movie-card {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    
+    }
+    .card > img {
+      width: 120px;
+      height: 200px;
+    }
+  }
+
+
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+

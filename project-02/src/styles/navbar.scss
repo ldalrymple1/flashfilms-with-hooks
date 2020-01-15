@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Biryani', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+}
+
+nav {
+  font-family: 'Biryani', sans-serif;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .title-name {
+    color: black;
+    font-weight: 800;
+    // margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+  }
+  img {
+    transform: scale(.2);
+  }
+}
+
+.title-name:hover{
+  transform: scale(1.08);
+}
+// .hidden {
+//   display: none;
+// }
+
+
+

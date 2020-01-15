@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Biryani', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+}
+
+.home-div {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: 'Biryani', sans-serif;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 150px;
+  }
+}

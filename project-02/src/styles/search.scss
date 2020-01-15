@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Biryani', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Biryani:900&display=swap');
+}
+ $flashOfColor: rgb(247, 18, 75);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Biryani', sans-serif;
+  
+}
+
+.first-second-wrapper {
+  display: flex;
+  flex-grow: 1;
+
+  .firsthalf {
+    // background: green;
+    flex-grow: 1;
+    display: flex;
+
+    h1 {
+      margin-top: 210px;
+      font-weight: 800;
+      font-size: 90px;
+      margin-left: 30px;
+    }
+  }
+  .secondhalf {
+    // background: orange;
+    flex-grow: 1;
+  }
+}
+
+.invalid-input {
+  color: red;
+}
+
+select {
+  font-family: 'Biryani', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  margin-top: 300px;
+  border: 0; 
+  background: 0;
+  width: 600px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-bottom: 10px black solid;
+  text-transform: uppercase;
+
+}
+option {
+  color: green;;
+}
+
+input {
+  font-family: 'Biryani', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  border: 0; 
+  background: 0;
+  margin: 0;
+  color: black;
+  border-bottom: 10px black solid;
+  width: 600px;
+
+}
+
+.input-error {
+  border-bottom: 10px red solid;
+}
+
+button {
+  font-family: 'Biryani', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(247, 18, 75);
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1;
+  
+}
+
+
+main {
+  display: flex;
+  flex-grow: 1;
+
+  .form-line-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    form {
+      flex-grow: 18;
+    }
+  
+    .bottomline {
+      // flex-grow: 1;
+      height: 60px;
+      // align-self: flex-end;
+      // flex-direction: baseline;
+      justify-content: center;
+      align-items: center;
+      
+      .line {
+        height: 30px;
+        background: black;
+        margin: 0 15px;
+      }
+    }
+  }
+
+}
+
